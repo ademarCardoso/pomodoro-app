@@ -18,7 +18,9 @@ function pause () {
 function refresh () {
     clearTimeout(time)
     document.getElementById('spanRelogio').innerHTML = "25:00";
+    document.getElementById('progres-bar').value = 0 
     min = 25; seg = 1
+
     relogio()
 }
 
