@@ -1,6 +1,7 @@
+const audio = document.getElementById('alarm')
 const seconds = 1000
 let time
-let min = 25, seg = 1 
+let min = 1, seg = 1 
 let timer_on = 0
 
 function start () {
@@ -39,12 +40,14 @@ function relogio() {
         if (seg.toString().length == 1) {
             seg = "0" + seg;
         }
+        // Injeta o tempo de forma regressiva no html
         document.getElementById('spanRelogio').innerHTML = min + ":" + seg;
+        // Incrementa a barra de progresso a cada segundo passado
         document.getElementById('progres-bar').value += 1 
         time = setTimeout(relogio, seconds)
     }
     else {
-        alert('O tempo acabou !') // Esta chamada devera ser um aviso sonoro
-        document.getElementById('spanRelogio').innerHTML = "00:00";
+        document.getElementById('spanRelogio').innerHTML = "00:00"
+        audio.play()
     }
 }	
