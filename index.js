@@ -25,6 +25,16 @@ function refresh () {
     relogio()
 }
 
+function stop () {
+    // clearTimeout(time)
+    // document.getElementById('spanRelogio').innerHTML = "25:00";
+    // document.getElementById('progres-bar').value = 0
+    // min = 25; seg = 1
+
+    // timer_on = 0
+    audio.pause()
+}
+
 function relogio() {
     if ((min > 0) || (seg > 0)) {
         if (seg == 0) {
