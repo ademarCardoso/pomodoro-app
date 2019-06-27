@@ -38,6 +38,7 @@ function relogio() {
             seg = "0" + seg;
         }
         document.getElementById('spanRelogio').innerHTML = min + ":" + seg;
+        document.getElementById('progres-bar').value += 1 
         time = setTimeout(relogio, seconds)
     }
     else {
