@@ -10,7 +10,7 @@ export class AppComponent {
 
   }
   time
-  seconds = 1
+  seconds = 1000
   min = 25
   seg = 0
   timer_on = 0
@@ -71,7 +71,6 @@ playPause (elem) {
       audio.play()
     }
     if (condition === 'pause') {
-      // audio.load()
       console.log('karalho')
       audio.pause()
     }
