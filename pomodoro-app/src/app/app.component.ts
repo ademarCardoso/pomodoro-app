@@ -96,7 +96,6 @@ refresh() {
   this.min = 25
   this.seg = 0
   document.getElementById('regress-timer').innerHTML = "25:00";
-  // document.getElementById('progres-bar').value = 0
 
   this.relogio()
 }
