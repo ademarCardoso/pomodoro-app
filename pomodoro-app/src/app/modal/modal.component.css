@@ -1,9 +1,12 @@
 .footerado  {
     margin-top: 45%;
+    cursor: pointer;
 }
 
 .btn-info {
+    cursor: pointer;
     border: none;
     background-color: dodgerblue;
     font-size: 25pt;
 }
+
