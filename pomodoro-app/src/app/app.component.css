@@ -49,18 +49,6 @@ button {
   display: none;
 }
 
-.footer {
-  position: absolute;
-  bottom: 30px;
-  margin-left: 48%;
-  margin-right: 50%;
-}
-
-.footer i {
-  color: white;
-  font-size: 20pt;
-}
-
 .tretinha {
   background-color: none;
   width: 300px;
