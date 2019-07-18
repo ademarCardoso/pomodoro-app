@@ -6,7 +6,11 @@
 .btn-info {
     cursor: pointer;
     border: none;
-    background-color: dodgerblue;
+    background-color: #FF5258;
     font-size: 25pt;
+}
+
+.message.is-link .message-header {
+    background-color: #FF5258;
 }
 

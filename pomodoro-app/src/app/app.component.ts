@@ -50,8 +50,7 @@ playPause (elem) {
       }
       // Injeta o tempo de forma regressiva no html
       document.getElementById('regress-timer').innerHTML = this.min + ':' + this.seg
-      // Incrementa a barra de progresso a cada segundo passado
-      // document.getElementById('progres-bar').value += 1
+      
       this.time = setTimeout(() => {
         this.relogio()
       }, this.seconds)
